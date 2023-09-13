@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f51302d84f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="digital-clock"></div>
+    <h1>Task Manager</h1>
+    <div class="search">
+        <input type="text" id="search-input" placeholder="Search tasks...">
+        <button id="search-button">Search</button>
+        <button id="voice-search-button">
+            <i class="fa-solid fa-microphone fa-xl"></i>
+        </button>
+
+    </div>
+    <br>
+    <form id="f1">
+        <input type="text" id="inf" placeholder="Enter the task...">
+    
+        <input type="date" id="date" required>
+        <select id="category" required>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="shopping">Shopping</option>
+        </select>
+        <br>
+        
+        <input type="submit" id="tasksubmit" value="Add Task">
+    </form>
+</header>
+
+      
+    
+    
+    <div id="sorting-controls">
+        <button id="sort-by-due-date">Sort by Due Date</button>
+        <button id="sort-by-category">Sort by Category</button>
+    </div>
+    <div class="container">
+        <div id = "filter-container">
+            <select id="filter-category">
+                <option value="all">All</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="shopping">Shopping</option>
+            </select>
+            <button id="filter-button">Filter</button>
+        
+        
+        
+        </div>
+    
+        <main>
+        <section class="list">
+            <h3>Tasks</h3>
+            <div id="tasks">
+        </div>
+        </section>
+        </main>
+    
+        <script src="script.js"></script>
+</div>
+
+</body>
+</html>
